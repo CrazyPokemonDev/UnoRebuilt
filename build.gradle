@@ -30,14 +30,15 @@ shadowJar {
     relocate 'com.jeff_media.customblockdata', 'de.crazypokemondev.minecraftUnoRebuilt.customblockdata'
 }
 
-build {
-    dependsOn shadowJar
-}
-
 tasks.register("zipResourcePack", Zip) {
     from 'resource_pack/'
     include '**/*'
-    archiveFileName = 'resource_pack.zip'
+    archiveFileName = 'UnoRebuilt.zip'
+}
+
+build {
+    dependsOn shadowJar
+    dependsOn zipResourcePack
 }
 
 tasks {
