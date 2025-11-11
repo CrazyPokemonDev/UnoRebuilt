@@ -3,6 +3,7 @@ package de.crazypokemondev.minecraftUnoRebuilt.games.uno;
 import de.crazypokemondev.minecraftUnoRebuilt.MinecraftUnoRebuilt;
 import de.crazypokemondev.minecraftUnoRebuilt.games.lobby.GameState;
 import de.crazypokemondev.minecraftUnoRebuilt.helpers.Callback;
+import de.crazypokemondev.minecraftUnoRebuilt.helpers.ListHelper;
 import de.crazypokemondev.uniGUI.api.Gui;
 import de.crazypokemondev.uniGUI.api.GuiState;
 import lombok.Getter;
@@ -32,7 +33,7 @@ public class UnoState implements GameState {
     private org.eu.zajc.juno.players.UnoPlayer nextPlayer;
 
     public UnoState(List<Player> players) {
-        this.players = players.stream().map(UnoPlayer::new).toList();
+        this.players = players.stream().map(UnoPlayer::new).collect(ListHelper.toUnmodifiableShuffledList());
     }
 
     public void setFinished() {
