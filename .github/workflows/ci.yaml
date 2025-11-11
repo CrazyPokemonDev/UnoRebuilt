@@ -29,7 +29,7 @@ jobs:
 
   deploy:
   
-    runs-on: intranet
+    runs-on: crazypokemondev-runner
     environment: mctest
 
     steps:
