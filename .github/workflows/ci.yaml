@@ -48,6 +48,5 @@ jobs:
           HashKnownHosts no
         EOF
     - name: Restart server
-      env:
-        MANAGEMENT_SECRET: ${{ secrets.MCSM_SECRET }}
-      run: ssh mctest@flommc "wscat -H \"Authorization: Bearer $MANAGEMENT_SECRET\" --connect ws://localhost:19566 -x '{\"method\":\"minecraft:server/stop\",\"id\":1,\"params\":[]}'"
+      run: |
+        ssh mctest@flommc 'wscat -H "Authorization: Bearer ${{ secrets.MCSM_SECRET }}" --connect ws://localhost:19566 -x \'{"method":"minecraft:server/stop","id":1,"params":[]}\''
