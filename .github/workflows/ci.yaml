@@ -44,7 +44,7 @@ jobs:
         echo $SSH_PRIVATE_KEY > ~/.ssh/id_rsa
         echo $SSH_HOST_PUBLIC_KEY >> ~/.ssh/known_hosts
         cat << EOF >> ~/.ssh/config
-        Host flommc
+        Host *
           HashKnownHosts no
         EOF
     - name: Run test command
