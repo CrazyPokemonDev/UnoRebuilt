@@ -1,0 +1,428 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "unodeck",
+        "model": {
+          "type": "minecraft:model",
+          "model": "uno:item/deck"
+        }
+      },
+      {
+        "when": "uno",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "uno:item/card/background",
+              "tints": [
+                {
+                  "type": "minecraft:constant",
+                  "value": [
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "type": "minecraft:custom_model_data",
+                  "index": 0,
+                  "default": [
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:select",
+              "property": "minecraft:custom_model_data",
+              "index": 1,
+              "cases": [
+                {
+                  "when": "Wild",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/color_wild"
+                  }
+                },
+                {
+                  "when": "Red",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/color",
+                    "tints": [
+                      {
+                        "type": "minecraft:constant",
+                        "value": [
+                          1,
+                          0,
+                          0
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "Green",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/color",
+                    "tints": [
+                      {
+                        "type": "minecraft:constant",
+                        "value": [
+                          0.149019607843,
+                          0.592156862745,
+                          0
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "Blue",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/color",
+                    "tints": [
+                      {
+                        "type": "minecraft:constant",
+                        "value": [
+                          0.282352941176,
+                          0,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "Yellow",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/color",
+                    "tints": [
+                      {
+                        "type": "minecraft:constant",
+                        "value": [
+                          1,
+                          0.925490196078,
+                          0
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "minecraft:model",
+                "model": "uno:item/card/color",
+                "tints": [
+                  {
+                    "type": "minecraft:constant",
+                    "value": [
+                      1,
+                      1,
+                      1
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "type": "minecraft:select",
+              "property": "minecraft:custom_model_data",
+              "index": 2,
+              "cases": [
+                {
+                  "when": "0",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/0",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": [
+                          1,
+                          1,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "1",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/1",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": [
+                          1,
+                          1,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "2",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/2",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": [
+                          1,
+                          1,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "3",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/3",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": [
+                          1,
+                          1,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "4",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/4",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": [
+                          1,
+                          1,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "5",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/5",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": [
+                          1,
+                          1,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "6",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/6",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": [
+                          1,
+                          1,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "7",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/7",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": [
+                          1,
+                          1,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "8",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/8",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": [
+                          1,
+                          1,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "9",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/9",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": [
+                          1,
+                          1,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "+2",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/draw_2",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": [
+                          1,
+                          1,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "reverse",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/reverse",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": [
+                          1,
+                          1,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "skip",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/skip",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": [
+                          1,
+                          1,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "+4",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/draw_4",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": [
+                          1,
+                          1,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "wild",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "uno:item/card/wild",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": [
+                          1,
+                          1,
+                          1
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "minecraft:model",
+                "model": "uno:item/card/backside"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/paper"
+    }
+  }
+}

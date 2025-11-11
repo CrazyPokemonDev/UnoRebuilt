@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "uno:item/card/border",
+    "layer1": "uno:item/card/background"
+  }
+}

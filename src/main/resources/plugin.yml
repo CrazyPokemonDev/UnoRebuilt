@@ -1,0 +1,10 @@
+name: MinecraftUnoRebuilt
+version: '0.1'
+main: de.crazypokemondev.minecraftUnoRebuilt.MinecraftUnoRebuilt
+api-version: '1.21'
+authors: [ Olfi01 ]
+depend:
+  - GuiLib
+  - UniGUI
+softdepend:
+  - GSit
