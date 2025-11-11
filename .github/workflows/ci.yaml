@@ -2,7 +2,7 @@ name: Run plugin on test server
 
 on:
   push:
-    branches: [ "test-gha" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
@@ -41,6 +41,8 @@ jobs:
   deploy:
     needs:
       - build
+
+    if: ${{ github.event_name == 'push' }}
 
     runs-on: crazypokemondev-runner
     environment: mctest
