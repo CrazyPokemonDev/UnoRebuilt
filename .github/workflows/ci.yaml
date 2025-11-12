@@ -45,8 +45,6 @@ jobs:
     needs:
       - build
 
-    if: ${{ github.event_name == 'push' }}
-
     runs-on: crazypokemondev-runner
     environment: mctest
 
